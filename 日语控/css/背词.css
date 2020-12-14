@@ -1,0 +1,412 @@
+html {
+	font-size: calc(100vw/7.5);
+}
+
+@font-face {
+	font-family: pingfangRe;
+	src: url(../font/PingFang-Bold-2.ttf);
+}
+
+@font-face {
+	font-family: pingfangMe;
+	src: url(../font/PingFang_Medium.ttf);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-size: 0;
+}
+
+a {
+	font-size: inherit;
+	color: inherit;
+	text-decoration: none;
+}
+
+a:active {
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+.fl {
+	float: left;
+}
+
+.fr {
+	float: right;
+}
+
+#beijing {
+	width: 7.5rem;
+	position: relative;
+	box-sizing: border-box;
+	padding-bottom: 1rem;
+	overflow: hidden;
+}
+
+/* 总体设置 */
+/* 状态栏 */
+
+
+#kongjian {
+	width: 6.5rem;
+	overflow: hidden;
+	position: fixed;
+	margin-left: 0.49rem;
+	z-index: 999;
+}
+
+#kongjian img {
+	width: 6.5rem;
+	margin-top: 0.31rem;
+
+}
+
+/* 状态栏完 */
+
+/* hear开始 */
+/* 标题开始 */
+#header {
+	height: 7.3rem;
+	background-image: url(../img/背词/背单词-上次背诵结果.png);
+	background-size: 8.9rem;
+	background-repeat: no-repeat;
+	overflow: hidden;
+}
+
+.biaoti {
+	display: flex;
+	margin-top: 1.15rem;
+	align-items: center;
+}
+
+.biaoti span {
+	font-size: 0.34rem;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: pingfangMe;
+	line-height: 0.32rem;
+	margin-left: 3rem;
+}
+
+.biaoti img {
+	width: 0.35rem;
+	height: 0.3rem;
+	margin-left: 2.8rem;
+}
+
+/* 标题结束 */
+/* 数据概况 */
+#shujv {
+	margin-left: 0.31rem;
+	margin-top: 0.6rem;
+}
+
+#shujv>p {
+	font-family: pingfangMe;
+	font-size: 0.34rem;
+	font-weight: bold;
+	line-height: 0.32rem;
+	color: #ffffff;
+}
+
+#shujv>div {
+	width: 1.95rem;
+	height: 0.38rem;
+	background-color: #ff7624;
+	border-radius: 0.18rem;
+	display: inline-block;
+	margin-top: 0.34rem;
+	position: relative;
+}
+
+#shujv>div>span {
+	font-size: 0.22rem;
+	font-weight: bold;
+	line-height: 0.38rem;
+	color: #333333;
+	font-family: pingfangRe;
+	margin-left: 0.42rem;
+}
+
+#shujv>div>img:nth-of-type(1) {
+	width: 0.28rem;
+	height: 0.28rem;
+	position: absolute;
+	left: 0.11rem;
+	top: 0.05rem;
+}
+
+#shujv>div>img:nth-of-type(2) {
+	width: 0.29rem;
+	height: 0.38rem;
+	position: absolute;
+	left: 2.13rem;
+
+}
+
+/* 数据概况结束 */
+/* 学习——课程——创作 */
+#cont {
+	display: flex;
+	justify-content: space-around;
+	margin-top: 0.65rem;
+}
+
+.xuexi {
+	width: 2.16rem;
+	height: 3.19rem;
+	background-color: #0488ff;
+	box-shadow: 0rem 0rem 0.535rem 0.005rem rgba(8, 104, 232, 0.31);
+	border-radius: 0.08rem;
+	display: flex;
+	align-items: center;
+	flex-direction: column;
+
+}
+
+.xuexi img {
+	width: 1.06rem;
+	height: 1.06rem;
+	box-shadow: inset 0rem 0rem 0rem 0rem rgba(0, 72, 139, 0.1);
+	margin-top: 0.27rem;
+}
+
+.xuexi>p>span:nth-of-type(1) {
+	font-family: pingfangMe;
+	font-size: 0.49rem;
+	font-weight: bold;
+	color: #ffffff;
+	line-height: 0.38rem;
+
+}
+
+.xuexi>p:nth-of-type(1) {
+	margin-top: 0.38rem;
+
+}
+
+.xuexi>p:nth-of-type(2) {
+	margin-top: 0.35rem;
+}
+
+.xuexi>p>span:nth-of-type(2) {
+	font-family: pingfangMe;
+	font-size: 0.24rem;
+	font-weight: bold;
+	color: #ffffff;
+	margin-left: 0.1rem;
+}
+
+.xuexi>p {
+	font-family: pingfangMe;
+	font-size: 0.3rem;
+	font-weight: bold;
+	color: #ffffff;
+}
+
+#cont>.kecheng {
+	background-color: #FFFFFF;
+}
+
+#cont>.kecheng p span {
+	color: #9d9d9d;
+}
+
+#cont>.kecheng p {
+	color: #9d9d9d;
+}
+
+
+/* header 结束 */
+/* 日程开始 */
+
+#rcheng {}
+
+#xuexirli {}
+
+#xuexirli>span:nth-of-type(1) {
+	font-size: 0.34rem;
+	font-weight: bold;
+	font-family: pingfangMe;
+	color: #232323;
+	margin-left: 0.31rem;
+}
+
+#xuexirli>span:nth-of-type(2) {
+	font-family: pingfangRe;
+	font-size: 0.26rem;
+	font-weight: bold;
+	color: #585858;
+	margin-left: 4.81rem;
+}
+
+#xuexirli>span:nth-of-type(2)>img {
+	width: 0.12rem;
+	height: 0.11rem;
+	margin-left: 0.1rem;
+}
+
+#zhou {
+	display: flex;
+	justify-content: space-between;
+	width: 6.4rem;
+	margin: 0.32rem auto;
+}
+
+#zhou>div {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	width: 0.66rem;
+	height: 1.16rem;
+	position: relative;
+}
+
+#zhou>div>span:nth-of-type(1) {
+	font-family: pingfangRe;
+	font-size: 0.26rem;
+	font-weight: bold;
+	color: #585858;
+	margin-top: 0.23rem;
+	line-height: 0.19rem;
+}
+
+#zhou>div>p {
+	font-family: pingfangMe;
+	font-size: 0.32rem;
+	font-weight: bold;
+	color: #585858;
+	margin-top: 0.20rem;
+}
+
+.rli_day span,
+.rli_day p {
+	color: #0488ff !important;
+}
+
+.rli_xuanzhong {
+	width: 0.66rem;
+	height: 1.16rem;
+	background-color: #0488ff;
+	border-radius: 0.33rem;
+}
+
+.rli_xuanzhong span {
+	color: #FFFFFF !important;
+}
+
+.rli_xuanzhong p {
+	color: #0488ff !important;
+	width: 0.52rem;
+	height: 0.52rem;
+	background-color: #FFFFFF;
+	border-radius: 50%;
+	position: absolute;
+	top: 0.34rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+#jihua {
+	width: 6.92rem;
+	height: 1.87rem;
+	background-color: #ffffff;
+	box-shadow: 0rem 0rem 0.238rem 0.002rem rgba(33, 33, 33, 0.16);
+	border-radius: 0.1rem;
+	margin: 0.45rem auto;
+	display: flex;
+	justify-content: space-around;
+}
+#jihua>div{
+	height: 1.87rem;
+	display: flex;
+	justify-content: space-around;
+	flex-direction: column;
+	align-items: center;
+	
+}
+#jihua>div>p:nth-of-type(1) {
+	font-family: pingfangMe;
+	font-size: 0.38rem;
+	font-weight: bold;
+	color: #555555;
+	margin-top: 0.46rem;
+}
+
+#jihua>div>p:nth-of-type(2) {
+	font-family: pingfangRe;
+	font-size: 0.26rem;
+	font-weight: bold;
+	color: #6f6f6f;
+	margin-bottom: 0.56rem;
+}
+
+/* 日程结束 */
+/* 统计开始 */
+#xuexitongji span{
+	font-size: 0.34rem;
+	font-weight: bold;
+	font-family: pingfangMe;
+	color: #232323;
+	margin-left: 0.31rem;
+}
+
+#xuexitongji img{
+	width: 0.21rem;
+	height: 0.2rem;
+	margin-left: 0.08rem;
+	
+}
+#tongji>img{
+	width: 6.89rem;
+	margin-left: 0.3rem;
+}
+
+
+
+
+
+
+/* foot开始 */
+#foot {
+	width: 7.5rem;
+	height: 0.9rem;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: fixed;
+	bottom: 0;
+	background-color: #FFFFFF;
+}
+
+#foot div {
+	width: 0.6rem;
+}
+
+#foot div img {
+	width: 0.44rem;
+	margin-bottom: 0.05rem;
+
+}
+
+#foot span {
+	width: 0.4rem;
+	height: 0.2rem;
+	font-family: pingfangMe;
+	font-size: 0.2rem;
+	font-weight: bold;
+	line-height: 0.2rem;
+	color: #555555;
+}
+
+#foot .xuanzhong {
+	color: #4fa5ff;
+}
+
+
+@media screen and (min-width:900px) {
+	html{font-size: 120px;}
+	#beijing{width: 900px; margin: 0 auto;margin: 0 auto;}
+}
